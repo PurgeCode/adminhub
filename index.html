@@ -1,171 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- Boxicons -->
-      <link
-         href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-         rel="stylesheet"
-      />
-      <!-- My CSS -->
-      <link rel="stylesheet" href="./css/style.css" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-      <title>ADMIN HUB</title>
-   </head>
-   <body>
-      <!-- SIDEBAR -->
-      <section id="sidebar">
-         <a href="#" class="brand">
-            <i class="bx bxs-smile"></i>
-            <span class="text">Welcome</span>
-         </a>
-         <ul class="side-menu top">
-            <li class="active">
-               <a href="#">
-                  <i class="bx bxs-dashboard"></i>
-                  <span class="text">Dashboard</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-graduation"></i>
-                  <span class="text">Grading</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-book-reader"></i>
-                  <span class="text">Student</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-user-voice"></i>
-                  <span class="text">Teachers</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-book-content"></i>
-                  <span class="text">Subject</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-buildings"></i>
-                  <span class="text">Department</span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <i class="bx bxs-school"></i>
-                  <span class="text">Faculty</span>
-               </a>
-            </li>
-         </ul>
-         <ul class="side-menu">
-            <li>
-               <a href="#">
-                  <i class="bx bxs-cog"></i>
-                  <span class="text">Settings</span>
-               </a>
-            </li>
-            <li>
-               <a href="#" class="logout">
-                  <i class="bx bxs-log-out-circle"></i>
-                  <span class="text">Logout</span>
-               </a>
-            </li>
-         </ul>
-      </section>
-      <!-- SIDEBAR -->
+    <title>ADMIN HUB</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand">
+        <i class="bx bxs-smile"></i>
+        <span class="text">Welcome</span>
+      </a>
+      <!-- Side Menu -->
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="#" class="tab-button" data-target="tab-dashboard">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-grade">
+            <i class="bx bxs-graduation"></i>
+            <span class="text">Grading</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-student">
+            <i class="bx bxs-book-reader"></i>
+            <span class="text">Student</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-teachers">
+            <i class="bx bxs-user-voice"></i>
+            <span class="text">Teachers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-subject">
+            <i class="bx bxs-book-content"></i>
+            <span class="text">Subject</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-department">
+            <i class="bx bxs-buildings"></i>
+            <span class="text">Department</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="tab-button" data-target="tab-faculty">
+            <i class="bx bxs-school"></i>
+            <span class="text">Faculty</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#">
+            <i class="bx bxs-cog"></i>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
 
-      <!-- CONTENT -->
-      <section id="content">
-         <!-- NAVBAR -->
-         <nav>
-            <i class="bx bx-menu"></i>
-            <a href="#" class="nav-link">Categories</a>
-            <form action="#">
-               <div class="form-input">
-                  <input type="search" placeholder="Search..." />
-                  <button type="submit" class="search-btn">
-                     <i class="bx bx-search"></i>
-                  </button>
-               </div>
-            </form>
-            <input type="checkbox" id="switch-mode" hidden />
-            <label for="switch-mode" class="switch-mode"></label>
-            <a href="#" class="notification">
-               <i class="bx bxs-bell"></i>
-               <span class="num">8</span>
-            </a>
-            <a href="#" class="profile">
-               <img src="./image/profile.jpg" />
-            </a>
-         </nav>
-         <!-- NAVBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <a href="#" class="nav-link">Categories</a>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden />
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+          <i class="bx bxs-bell"></i>
+          <span class="num">8</span>
+        </a>
+        <a href="#" class="profile">
+          <img src="./image/profile.jpg" />
+        </a>
+      </nav>
+      <!-- NAVBAR -->
 
-         <!-- MAIN -->
-         <main>
-            <div class="head-title">
-               <div class="left">
-                  <h1>Dashboard</h1>
-                  <ul class="breadcrumb">
-                     <li>
-                        <a href="#">Dashboard</a>
-                     </li>
-                     <li><i class="bx bx-chevron-right"></i></li>
-                     <li>
-                        <a class="active" href="#">Home</a>
-                     </li>
-                  </ul>
-               </div>
-               <a href="#" class="btn-download">
-                  <i class="bx bxs-cloud-download"></i>
-                  <span class="text">Download PDF</span>
-               </a>
-            </div>
-
-            <ul class="box-info">
-               <li>
-                  <i class="bx bxs-calendar-check"></i>
-                  <span class="text">
-                     <h3>A+ - English</h3>
-                     <p>Grade Updates</p>
-                  </span>
-               </li>
-               <li>
-                  <i class="bx bxs-group"></i>
-                  <span class="text">
-                     <h3>10-13-2023</h3>
-                     <p>Last Login</p>
-                  </span>
-               </li>
-               <li>
-                  <i class="bx bxs-dollar-circle"></i>
-                  <span class="text">
-                     <h3>Full Scholarship</h3>
-                     <p>Upcoming Payment</p>
-                  </span>
-               </li>
+      <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a id="home-link" href="#">Home</a>
+              </li>
             </ul>
-            <div class="dashboard">
-               <h1>Welcome to Kunware University</h1>
-               <p>
-                  Discover Your Potential, Forge Your Path, and Create a Bright
-                  Future: Where Excellence in Education Meets Limitless
-                  Opportunities, We're Here to Guide Your Extraordinary Journey
-                  of Personal Growth and Academic Achievement.
-               </p>
-            </div>
-         </main>
-         <!-- MAIN -->
-      </section>
-      <!-- CONTENT -->
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
 
-      <script src="./script/script.js"></script>
-   </body>
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>A+ - English</h3>
+              <p>Grade Updates</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>10-13-2023</h3>
+              <p>Last Login</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>Full Scholarship</h3>
+              <p>Upcoming Payment</p>
+            </span>
+          </li>
+        </ul>
+
+        <!-- Tab For First Dashboard -->
+        <div class="tab-content" id="tab-dashboard">
+          <div class="dashboard">
+            <div class="dash-center">
+              <h1>Welcome to Kunware University</h1>
+              <p>
+                "Discover Your Potential, Forge Your Path, and Create a Bright
+                Future: Where Excellence in Education Meets Limitless
+                Opportunities, We're Here to Guide Your Extraordinary Journey of
+                Personal Growth and Academic Achievement."
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Grading Dashboard -->
+        <div class="tab-content" id="tab-grade">
+          <div class="grading">
+            <div class="input-grades">
+              <div class="head">
+                <p>Input Student Grades</p>
+                <div id="errorDisplay"></div>
+              </div>
+              <form action="" id="userInputForm">
+                <div class="input-box">
+                  <input type="text" id="grades1" required="Required" />
+                  <span>English</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="grades2" required="Required" />
+                  <span>Math</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="grades3" required="Required" />
+                  <span>Science</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="grades4" required="Required" />
+                  <span>Physics</span>
+                </div>
+                <div class="buttons">
+                  <button type="button" onclick="displayUserInput()">
+                    Submit
+                  </button>
+                  <button type="button" class="clear" onclick="clearInputs()">
+                    Clear Data
+                  </button>
+                </div>
+              </form>
+              <p class="notes">
+                Please remember to input grades accurately and on time.
+                Consistency and clear communication with students and parents
+                are key. Your efforts ensure a smooth grading process and
+                maintain the integrity of our academic records.
+              </p>
+            </div>
+            <div class="view-grades">
+              <div class="head">
+                <p>Grades Summary</p>
+              </div>
+              <table id="outputTable">
+                <thead>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Grades</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div id="messageDisplay">
+                Please input the grades first, summary well displayed here.
+              </div>
+            </div>
+            <div class="avg-grades">
+              <div class="head">
+                <p>Grades Average</p>
+              </div>
+              <div id="avgDisplay">
+                Please input the grades , average of the students appear here.
+              </div>
+              <p id="averageAmount"></p>
+              <div id="averageMessage"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Three Dashboard -->
+        <div class="tab-content" id="tab-student">
+          <div class="dashboard error-div">
+            <div class="dash-center">
+              <h2 class="title-content"></h2>
+              <h1>404 - Kunware Error</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Teachers Dashboard -->
+        <div class="tab-content" id="tab-teachers">
+          <div class="dashboard error-div">
+            <div class="dash-center">
+              <h2 class="title-content"></h2>
+              <h1>404 - Kunware Error</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Subject Dashboard -->
+        <div class="tab-content" id="tab-subject">
+          <div class="dashboard error-div">
+            <div class="dash-center">
+              <h2 class="title-content"></h2>
+              <h1>404 - Kunware Error</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Department Dashboard -->
+        <div class="tab-content" id="tab-department">
+          <div class="dashboard error-div">
+            <div class="dash-center">
+              <h2 class="title-content"></h2>
+              <h1>404 - Kunware Error</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Tab For Faculty Dashboard -->
+        <div class="tab-content" id="tab-faculty">
+          <div class="dashboard error-div">
+            <div class="dash-center">
+              <h2 class="title-content"></h2>
+              <h1>404 - Kunware Error</h1>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- CONTENT -->
+
+    <script src="./script/script.js"></script>
+  </body>
 </html>
